@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DekoRista Login/Signup</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="overlay"></div>
+            <div class="text-content">
+                <img src="img/deko.png" alt="DekoRista Logo" width="600" />
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <div class="form-toggle">
+                    <button id="login-toggle" class="active">Login</button>
+                    <button id="signup-toggle">Sign Up</button>
+                </div>
+                <form id="login-form" action="login.php" method="POST" autocomplete="off" onsubmit="return false;">
+                    <h2>Login</h2>
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username" required />
+                    <label for="login-password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="login-password" name="password" required />
+                        <span id="toggle-password" class="toggle-password" title="Show/Hide Password" toggle="#login-password">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                    <div style="margin-top: 5px; margin-bottom: 10px;">
+                        <a href="forgot_password.html" style="text-decoration: none; color: #007bff;">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div style="margin-top: 10px;">
+                </div>
+                <form id="signup-form" action="signup.php" method="POST" autocomplete="off" style="display:none;">
+                    <h2>Sign Up</h2>
+                    <label for="signup-fullname">Full Name</label>
+                    <input type="text" id="signup-fullname" name="fullname" required />
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required />
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="username" required />
+                    <label for="signup-password">New Password</label>
+                    <div class="password-container">
+                        <input type="password" id="signup-password" name="password" required />
+                        <span id="toggle-signup-password" class="toggle-password" title="Show/Hide Password" toggle="#signup-password">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="signup-confirm-password" name="confirm_password" required />
+                        <span id="toggle-signup-confirm-password" class="toggle-password" title="Show/Hide Password" toggle="#signup-confirm-password">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login_signup.js"></script>
+</body>
+</html>

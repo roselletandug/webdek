@@ -1,0 +1,50 @@
+<h2>Packages</h2>
+                <div class="packages-container">
+                    <div class="package-item">
+                        <img src="img/1.jpg" alt="Package 1" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/2.jpg" alt="Package 2" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/3.jpg" alt="Package 3" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/4.jpg" alt="Package 4" />
+                    </div>
+                </div>
+            </section>
+=======
+            <section id="packages-section" class="packages-section">
+                <h2>Packages</h2>
+                <div class="packages-container">
+                    <div class="package-item">
+                        <img src="img/1.jpg" alt="Package 1" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/2.jpg" alt="Package 2" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/3.jpg" alt="Package 3" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/4.jpg" alt="Package 4" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery-section" class="gallery-section" style="display:none;">
+                <h2>Gallery</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item"><img src="img/1.jpg" alt="Gallery Image 1" /></div>
+                    <div class="gallery-item"><img src="img/2.jpg" alt="Gallery Image 2" /></div>
+                    <div class="gallery-item"><img src="img/3.jpg" alt="Gallery Image 3" /></div>
+                    <div class="gallery-item"><img src="img/4.jpg" alt="Gallery Image 4" /></div>
+                    <div class="gallery-item"><img src="img/ab.jpg" alt="Gallery Image 5" /></div>
+                    <div class="gallery-item"><img src="img/deko.png" alt="Gallery Image 6" /></div>
+                    <div class="gallery-item"><img src="img/GcashQR.jpeg" alt="Gallery Image 7" /></div>
+                    <div class="gallery-item"><img src="img/home.jpg" alt="Gallery Image 8" /></div>
+                    <div class="gallery-item"><img src="img/logo.jpg" alt="Gallery Image 9" /></div>
+                    <div class="gallery-item"><img src="img/logo.png" alt="Gallery Image 10" /></div>
+                </div>
+            </section>

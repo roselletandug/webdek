@@ -1,0 +1,62 @@
+<<<<<<<
+            <section class="content-area">
+                <div class="welcome-container">
+                    <h1>Welcome to the DekoRista</h1>
+                    <p>All about creating something unique for your party needs.<br />
+                    Let us help you with your event styling, party and giveaways needs. Embossed and die cut invites.</p>
+                </div>
+            </section>
+=======
+            <section class="content-area">
+                <div class="selectors">
+                    <label for="select-year">Select Year:</label>
+                    <select id="select-year" name="select-year">
+                        <option value="2024" selected>2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <label for="select-month">Select Month:</label>
+                    <select id="select-month" name="select-month">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-box recent-event">
+                        <h3>Recent Event</h3>
+                        <p id="recent-event-count">0</p>
+                    </div>
+                    <div class="stat-box approved-events">
+                        <h3>Approved Events</h3>
+                        <p id="approved-events-count">0</p>
+                    </div>
+                    <div class="stat-box declined-events">
+                        <h3>Decline Events</h3>
+                        <p id="declined-events-count">0</p>
+                    </div>
+                    <div class="stat-box monthly-events">
+                        <h3>Monthly Events</h3>
+                        <p id="monthly-events-count">0</p>
+                    </div>
+                </div>
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                </div>
+            </section>
+>>>>>>>

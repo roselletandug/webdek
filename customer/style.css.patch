@@ -1,0 +1,70 @@
+grid-column: 1 / -1;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+=======
+#booking-form fieldset {
+    grid-column: 1 / -1;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    text-align: center; /* Added to center text inside fieldsets */
+}
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+#booking-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #555;
+}
+=======
+#booking-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #555;
+    text-align: center; /* Added to center label text */
+}
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form input[type="date"],
+#booking-form input[type="time"],
+#booking-form input[type="number"],
+#booking-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #b8860b;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+=======
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form input[type="date"],
+#booking-form input[type="time"],
+#booking-form input[type="number"],
+#booking-form textarea {
+    width: 80%; /* Reduced width to allow centering */
+    padding: 10px 12px;
+    border: 1.5px solid #b8860b;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center inputs horizontally */
+    display: block;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Customer Page - DekoRista</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="page-header">
+        <div class="profile-section">
+            <img src="img/logo.png" alt="Customer Profile" class="profile-image" />
+            <div class="profile-name">OTB Craft</div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../customer/img/logo.png" alt="DekoRista Logo" class="logo" />
+            <br/>
+            <div class="title">DekoRista</div>
+            <br/>
+        </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+            </ul>
+    </div>
+    <div class="main-content">
+        <div class="content-container">
+            <section id="home-section" class="welcome-section">
+                <div class="welcome-container">
+                    <div class="welcome-text-box">
+                        <h1>Welcome to the DekoRista</h1>
+                        <br/>
+                        <p class="intro-text">All about creating something unique for your party needs. Let us help you with your event styling, party and giveaways needs. Embossed and die cut invites.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="packages-section" class="packages-section">
+                <h2>Packages</h2>
+                <div class="packages-container">
+                    <div class="package-item">
+                        <img src="img/1.jpg" alt="Package 1" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/2.jpg" alt="Package 2" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/3.jpg" alt="Package 3" />
+                    </div>
+                    <div class="package-item">
+                        <img src="img/4.jpg" alt="Package 4" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback-section" class="feedback-section">
+                <h2>Rate your experience! 👋</h2>
+                <form id="feedback-form" action="../admin/submit_feedback.php" method="POST">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required />
+                    </div>
+<div class="form-group rating-group">
+    <label for="rating">Rating</label>
+    <div class="slider-container">
+        <input type="range" id="rating" name="rating" min="1" max="5" value="3" />
+        <span id="rating-value">3</span>
+    </div>
+</div>
+                    <div class="form-group">
+                        <label for="comment">Any comment for us?</label>
+                        <textarea id="comment" name="comment" rows="4" placeholder="Amazing experience!"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+    </section>
+
+    <section id="gallery-section" class="gallery-section" style="display:none; padding: 60px 50px; background-color: #f9f9f4;">
+        <h2 style="font-size: 32px; margin-bottom: 40px; color: #333; text-align: center;">Gallery</h2>
+        <div class="gallery-container" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; max-width: 100%; margin: 0 auto;">
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/1.jpg" alt="Gallery Image 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/2.jpg" alt="Gallery Image 2" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/3.jpg" alt="Gallery Image 3" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/4.jpg" alt="Gallery Image 4" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/5.jpg" alt="Gallery Image 5" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/6.jpg" alt="Gallery Image 6" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/7.jpg" alt="Gallery Image 7" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/8.jpg" alt="Gallery Image 8" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/9.jpg" alt="Gallery Image 9" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 0; aspect-ratio: 1;">
+                <img src="img1/10.jpg" alt="Gallery Image 10" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+        </div>
+    </section>
+    <script src="js/star-rating.js"></script>
+<br/>
+<br/>
+            <section id="book-section" class="booking-section">
+                <h2>Book Your Event</h2>
+                
+<form id="booking-form" action="../admin/submit_booking.php" method="POST" enctype="multipart/form-data" target="submitFrame">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lastName">Last Name<span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">First Name<span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactNo">Contact No.<span class="required">*</span></label>
+<input type="text" id="contactNo" name="contactNo" pattern="^09\d{9}$" maxlength="11" placeholder="e.g. 09968989912" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address<span class="required">*</span></label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Event Details</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="theme">Theme</label>
+                                <select id="theme" name="theme" style="border: 2px solid #b8860b; padding: 10px 12px; width: 100%;">
+                                    <option value="">Select a theme</option>
+                                    <option value="Rustic">Rustic</option>
+                                    <option value="Glamorous">Glamorous</option>
+                                    <option value="Modern Minimalist">Modern Minimalist</option>
+                                    <option value="Garden / Botanical">Garden / Botanical</option>
+                                    <option value="Fairy Tale">Fairy Tale</option>
+                                    <option value="Vintage">Vintage</option>
+                                    <option value="Beach / Tropical">Beach / Tropical</option>
+                                    <option value="Rustic Chic">Rustic Chic</option>
+                                    <option value="Industrial">Industrial</option>
+                                    <option value="Enchanted Forest">Enchanted Forest</option>
+                                    <option value="Celestial">Celestial</option>
+                                    <option value="Masquerade">Masquerade</option>
+                                    <option value="Classic Elegance">Classic Elegance</option>
+                                    <option value="Carnival / Circus">Carnival / Circus</option>
+                                    <option value="Hollywood / Red Carpet">Hollywood / Red Carpet</option>
+                                    <option value="Winter Wonderland">Winter Wonderland</option>
+                                    <option value="Spring Floral">Spring Floral</option>
+                                    <option value="Cultural Themes">Cultural Themes</option>
+                                    <option value="Disney">Disney</option>
+                                    <option value="Disco">Disco</option>
+                                    <option value="Safari">Safari</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="specificTheme">Specific Theme<span class="required">*</span></label>
+                                <input type="text" id="specificTheme" name="specificTheme" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="colorTheme">Color Theme<span class="required">*</span></label>
+                                <input type="text" id="colorTheme" name="colorTheme" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dateOfEvent">Date of Event<span class="required">*</span></label>
+                                <input type="date" id="dateOfEvent" name="dateOfEvent" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="timeOfEvent">Time of Event<span class="required">*</span></label>
+                                <input type="time" id="timeOfEvent" name="timeOfEvent" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nameOfCelebrant">Name of Celebrant<span class="required">*</span></label>
+                                <input type="text" id="nameOfCelebrant" name="nameOfCelebrant" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="ageOfCelebrant">Age of Celebrant<span class="required">*</span></label>
+                                <input type="number" id="ageOfCelebrant" name="ageOfCelebrant" max="122" min="0" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="venueAddress">Venue Address<span class="required">*</span></label>
+                                <textarea id="venueAddress" name="venueAddress" rows="2" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Package<span class="required">*</span></label>
+<select id="package" name="package" required style="border: 2px solid #b8860b; padding: 10px 12px; width: 100%;">
+                                    <option value="">Select a package</option>
+                                    <option value="single_backdrop">Single Backdrop</option>
+                                    <option value="multiple_backdrop">Multiple Backdrop</option>
+                                    <option value="full_setup">Full Setup</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+<div class="file-input-box">
+    <div class="form-group file-input-group">
+<label for="sampleEventDesign">Sample Event Design</label>
+        <input type="file" id="sampleEventDesign" name="sampleEventDesign" accept="image/*" />
+    </div>
+</div>
+<div class="file-input-box centered-file-input-box">
+    <div class="form-group file-input-group">
+        <div class="label-input-container">
+<label for="imagePayment">Image Payment (Proof of Payment)<span class="required">*</span></label>
+<p>Down Payment:</p>
+<table class="down-payment-table" style="margin-left: 20px; border-collapse: collapse;">
+  <tr>
+    <td style="font-weight: bold; padding-right: 10px;">Single Backdrop:</td>
+    <td style="padding-right: 20px;">2,000</td>
+  </tr>
+   </tr>
+    <td style="font-weight: bold; padding-right: 10px;">Multiple Backdrop:</td>
+    <td style="padding-right: 20px;">6,000</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; padding-right: 10px;">Full Setup:</td>
+    <td>20,000</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</br>     
+<input type="file" id="imagePayment" name="imagePayment" accept="image/*" required />
+        </div>
+    </div>
+</div>
+<div style="text-align: center; margin-top: 10px;">
+    <img src="img/GcashQR.jpeg" alt="Gcash QR Code" class="payment-qr" style="width: 200px;"/>
+</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="remarks">Remarks<span class="required">*</span></label>
+                                <textarea id="remarks" name="remarks" rows="3" required></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="submit-button">Submit Booking</button>
+                </form>
+            </section>
+
+
+    <script src="js/content-toggle.js"></script>
+    <script src="js/theme-availability.js"></script>
+    <iframe name="submitFrame" style="display:none;"></iframe>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const submitFrame = document.querySelector('iframe[name="submitFrame"]');
+            submitFrame.addEventListener('load', function () {
+                // Show popup after form submission completes
+                alert('You successfully submitted');
+                // Reset the form
+                document.getElementById('booking-form').reset();
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutLink = document.getElementById('logout-link');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    window.location.href = '../login/index.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

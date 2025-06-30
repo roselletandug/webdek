@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    last_name VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    contact_no VARCHAR(20) NOT NULL,
+    address TEXT NOT NULL,
+    theme VARCHAR(255),
+    specific_theme VARCHAR(255) NOT NULL,
+    color_theme VARCHAR(255) NOT NULL,
+    date_of_event DATE NOT NULL,
+    time_of_event TIME NOT NULL,
+    name_of_celebrant VARCHAR(255) NOT NULL,
+    age_of_celebrant INT NOT NULL,
+    venue_address TEXT NOT NULL,
+    package VARCHAR(255) NOT NULL,
+    sample_event_design VARCHAR(255),
+    image_payment VARCHAR(255) NOT NULL,
+    remarks TEXT NOT NULL,
+    status VARCHAR(50) DEFAULT 'Pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

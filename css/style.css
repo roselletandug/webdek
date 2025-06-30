@@ -1,0 +1,257 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+       background:  url('../img/bg.jpg') no-repeat center center fixed;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left side with background image and overlay */
+.left-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(209, 217, 225);
+    overflow: hidden;
+    background-color: #14143b;
+}
+
+.left-side .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent; /* Remove dark overlay */
+    z-index: 1;
+}
+
+.left-side .text-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-side h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.left-side h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Right side with forms */
+.right-side {
+    flex: 1;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../img/3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff; /* white background */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    color: #000000;
+}
+
+form label {
+    color: #000000;
+}
+
+form label {
+    color: #000000 !important;
+}
+
+form input {
+    background-color: #d0e7ff; /* light blue background */
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form button {
+    background-color: #e8ebf3;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3b553b;
+}
+
+.form-toggle button {
+    background: #ddd;
+    color: #000000;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+.form-toggle button:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+.form-toggle button:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+.form-toggle button.active {
+    background-color: #007bff;
+    color: rgb(251, 251, 251);
+}
+
+.form-toggle {
+    background-color: rgba(34, 49, 34, 0.85);
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-toggle button.active {
+    background: #007bff;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-side, .right-side {
+        flex: none;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* Password input container for show/hide icon */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    padding-right: 2.5rem; /* space for the icon */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.toggle-password:hover {
+    color: #0056b3;
+    border-color: transparent;
+    background-color: transparent;
+}
+

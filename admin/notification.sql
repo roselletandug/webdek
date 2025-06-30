@@ -1,0 +1,7 @@
+CREATE TABLE notifications (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT(11) NOT NULL,
+    message TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    is_read TINYINT(1) NOT NULL DEFAULT 0,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
